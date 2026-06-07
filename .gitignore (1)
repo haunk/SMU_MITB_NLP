@@ -1,0 +1,17 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+# Check which files are large
+!find . -size +50M -type f
+
+# Add large files to .gitignore
+!echo "Assignment/train.csv" >> .gitignore
+
+# Re-commit and push
+!git add .
+!git commit -m "update gitignore"
+!git push origin main
+
+# Add RTE folder to gitignore
+!echo "lab5/RTE/" >> .gitignore
